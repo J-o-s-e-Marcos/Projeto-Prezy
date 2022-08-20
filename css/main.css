@@ -1,25 +1,27 @@
-body {
+body{
   background: url("../img/background-main.jpg") no-repeat center top;
   background-size: cover;
   height: 100vh;
   display: block;
+  
 }
-#introducao-img-bg {
-  height: 95vh;
+#introducao-img-bg{
+  height: 90vh; 
 }
 
-.conteudo {
+.conteudo{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.conteudo h1 {
+
+.conteudo h1{
   grid-column: 2/-1;
   margin-left: 150px;
   margin-right: 50px;
   margin-top: 80px;
   font-size: 64px;
-  color: #ffe03d;
+  color: #FFE03D;
   font-weight: 550;
   text-transform: uppercase;
 }
@@ -29,18 +31,18 @@ body {
   margin-left: 242px;
   margin-top: 20px;
   font-size: 25px;
-  color: #ffe03d;
+  color: #FFE03D;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.conteudo button {
+.conteudo button{
   grid-column: 2/3;
   justify-self: center;
   margin-top: 170px;
   padding: 20px 30px;
   color: #272727;
-  background: linear-gradient(#ffe03d, #cd9a17);
+  background: linear-gradient(#FFE03D, #CD9A17);
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
