@@ -1,54 +1,46 @@
-body{
+body {
   background: url("../img/background-main.jpg") no-repeat center top;
   background-size: cover;
   height: 100vh;
   display: block;
 }
+#introducao-img-bg {
+  height: 95vh;
+}
 
-
-
-.container{
+.conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0px 40px;
-
-}
-#introducao-img-bg{
-  width: 100%;
-  height: 100vh; 
 }
 
-.conteudo{
+.conteudo h1 {
   grid-column: 2/-1;
-}
-
-
-.conteudo h1{
   margin-left: 150px;
   margin-right: 50px;
   margin-top: 80px;
   font-size: 64px;
-  color: #fb8855;
+  color: #ffe03d;
   font-weight: 550;
   text-transform: uppercase;
 }
 
 .conteudo p {
-margin-left: 242px;
-margin-top: 20px;
+  grid-column: 2/-1;
+  margin-left: 242px;
+  margin-top: 20px;
   font-size: 25px;
-  color: #fb8855;
+  color: #ffe03d;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.conteudo button{
-  position: absolute;
-  display: inline-block;
-  margin-top: 180px;
+.conteudo button {
+  grid-column: 2/3;
+  justify-self: center;
+  margin-top: 170px;
   padding: 20px 30px;
   color: #272727;
-  background: linear-gradient(#FF8B59, #D67239);
+  background: linear-gradient(#ffe03d, #cd9a17);
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
