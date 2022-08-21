@@ -1,0 +1,23 @@
+.forja{
+  padding: 100px 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+   gap: 30px;
+
+}
+.forja h2,img{
+  grid-column: 1;
+}
+.forja p,h2{
+  color: #FFF5F1;
+  font-size: 32px;
+}
+.img-forjaM2{
+  width: 450px;
+  height: auto;
+}
+
+.forja p{
+  grid-column: 2;
+  letter-spacing: .1rem;
+}

@@ -1,0 +1,41 @@
+.empresa-forja{
+  background: #000;
+}
+.empresa{
+  padding: 80px 80px;
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ 
+}
+.empresa p {
+  color:#FFF5F1;
+  font-size: 32px;
+  grid-column: 2;
+}
+.container-faca{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.container-faca span{
+  justify-self: center;
+  display: flex;
+  align-items: center;
+}
+.container-faca span::after {
+  content: "";
+  display: inline-block;
+  width: 40vw;
+  max-width: 100vw;
+  height: 20px;
+  background-color: rgb(255,224,61);
+  margin-left: 30px;
+}
+.container-faca span::before {
+  content: "";
+  display: inline-block;
+  width: 40vw;
+  max-width: 100vw;
+  height: 20px;
+  background-color: rgb(255,224,61);
+ margin-right: 30px;
+}
