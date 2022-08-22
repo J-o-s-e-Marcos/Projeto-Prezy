@@ -1,17 +1,16 @@
 .bg {
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0, 0, 0, 0.6);
   
 }
-.header{
+.header {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
 }
 
-.header-menu{
+.header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -24,9 +23,86 @@
   color: white;
   font-size: 20px;
 }
-.header-logo{
+.header-logo {
   padding: 10px 5px;
   width: 180px;
   display: block;
-  color: #FFE03D;
+  color: #ffe03d;
+}
+#menu-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .bg {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .header-menu {
+    gap: 30px;
+    margin-right: 20px;
+  }
+  .header-menu li {
+    border: 1px solid rgb(30, 30, 30);
+    background: rgb(30, 30, 30);
+    border-radius: 4px;
+  }
+}
+@media (max-width: 700px) {
+  .bg {
+    background-color: rgb(30, 30, 30);
+  }
+  .header-menu {
+    /*  display: none;*/
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 90px;
+    width: 220px;
+    right: 0px;
+    background: rgb(30, 30, 30);
+    z-index: 1000;
+    padding-bottom: 0.6rem;
+    border-radius: 5px;
+    margin-right: 0px;
+  }
+  .header-menu li {
+    border-radius: 0px;
+  }
+  #nav.active .header-menu {
+    display: block;
+  }
+  .header-menu li a {
+    display: block;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgb(66, 66, 66);
+  }
+  #menu-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    gap: .5rem;
+  }
+  #hamburguer {
+    display: block;
+    width: 25px;
+    border-top: 2px solid;
+    transition: .4s;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+  }
+  #nav.active #hamburguer{
+      transform: rotate(270deg);
+  }
 }

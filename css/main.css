@@ -1,27 +1,28 @@
-body{
+body {
   background: url("../img/background-main.jpg") no-repeat center top;
   background-size: cover;
-  height: 100vh;
+  background-attachment: fixed;
+  height: 620px;
   display: block;
-  
 }
-#introducao-img-bg{
-  height: 90vh; 
+#introducao-img-bg {
+  height: 620px;
 }
 
-.conteudo{
+
+.conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
 }
 
-
-.conteudo h1{
+.conteudo h1 {
   grid-column: 2/-1;
   margin-left: 150px;
   margin-right: 50px;
   margin-top: 80px;
-  font-size: 64px;
-  color: #FFE03D;
+  font-size: 4rem;
+  color: #ffe03d;
   font-weight: 550;
   text-transform: uppercase;
 }
@@ -31,21 +32,78 @@ body{
   margin-left: 242px;
   margin-top: 20px;
   font-size: 25px;
-  color: #FFE03D;
+  color: #ffe03d;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.conteudo button{
+.conteudo button {
   grid-column: 2/3;
   justify-self: center;
   margin-top: 170px;
   padding: 20px 30px;
   color: #272727;
-  background: linear-gradient(#FFE03D, #CD9A17);
+  background: linear-gradient(#ffe03d, #cd9a17);
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .conteudo h1 {
+    grid-column: 1/-1;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .conteudo p {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #ffe03d;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .conteudo button {
+    grid-column: 2/3;
+    justify-self: center;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .conteudo h1 {
+    grid-column: 1/-1;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .conteudo p {
+    grid-column: 1/-1;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #ffe03d;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .conteudo button {
+    grid-column: 2/3;
+    justify-self: center;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 700px){
+  body{
+  background: black;
+  }
+  #introducao-img-bg {
+  background: url("../img/background-main.jpg") no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 620px;
+  display: block;
+  }
 }
